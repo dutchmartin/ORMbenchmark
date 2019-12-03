@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "sprattus-bench",
+    "diesel-bench"
+]

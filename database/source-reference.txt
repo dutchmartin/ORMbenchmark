@@ -1,0 +1,2 @@
+The file dvd-rental.tar is downloaded from postgresqltutorial.com
+See http://www.postgresqltutorial.com/postgresql-sample-database/ for the ER model.

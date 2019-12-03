@@ -1,0 +1,16 @@
+{
+    "name": "martijn/doctrine-bench",
+    "authors": [
+        {
+            "name": "Martijn",
+            "email": "martijn@tweedegolf.nl"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "2.6.4",
+        "symfony/yaml": "2.*"
+    },
+    "autoload": {
+        "psr-0": {"": "src/"}
+    }
+}
