@@ -1,8 +1,8 @@
 <?php
+
 namespace entities;
 
 use Doctrine\ORM\Mapping as ORM;
-use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
 
 /**
  * entities\Customer
@@ -10,12 +10,12 @@ use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
  * @Entity
  * @Table(name="customer")
  */
-class Customer
+class InsertableCustomer
 {
     /**
      * @Id
-     * @ORM\GeneratedValue(strategy="AUTO")
      * @Column(type="integer")
+     * @GeneratedValue
      */
     private $customer_id;
 
@@ -49,19 +49,19 @@ class Customer
     private $activebool;
 
     /**
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     * @Column(type="date")
-     */
-    private $create_date;
-
-    /**
-     * @ORM\GeneratedValue(strategy="IDENTITY")
-     * @Column(type="datetime")
-     */
-
-    private $last_update;
-    /**
      * @Column(type="integer")
      */
     private $active;
+
+    public function __construct($customer_id, $store_id, $first_name, $last_name, $email, $address_id, $activebool, $active)
+    {
+        $this->customer_id = $customer_id;
+        $this->store_id = $store_id;
+        $this->first_name = $first_name;
+        $this->last_name = $last_name;
+        $this->email = $email;
+        $this->address_id = $address_id;
+        $this->activebool = $activebool;
+        $this->active = $active;
+    }
 }
