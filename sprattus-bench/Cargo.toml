@@ -8,5 +8,5 @@ edition = "2018"
 
 [dependencies]
 sprattus = { version = "0.0.1", features = ["with-chrono-0_4"] }
-tokio = "0.2.0-alpha.6"
+tokio = "1.8.4"
 chrono = "0.4.10"
